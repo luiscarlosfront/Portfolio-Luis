@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --background-color: #393e46;
+  --text-color: #eeeeee;
+  --aux-color: #00adb5;
+}
+
+:root {
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 3.6rem;
+  --h2-font-size: 2rem;
+  --normal-font-size: 1.8rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: var(--background-color);
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container-header {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.logo {
+  font-size: var(--normal-font-size);
+}
+
+.logo:hover {
+  border-bottom: 0.2rem solid var(--aux-color);
+}
+
+.logo a {
+  color: #eeeeee;
+}
+
+.container-menu {
+  display: flex;
+  font-size: var(--normal-font-size);
+}
+
+.container-menu li {
+  margin: 0px 10px 0 10px;
+}
+
+.container-menu a {
+  color: #eeeeee;
+}
+
+.nav-link:hover {
+  border-bottom: 0.2rem solid var(--aux-color);
+}
+
+.container-main {
+  max-width: 1024px;
+  height: 40vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rem;
+}
+
+.container-apresentacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.apresentacao {
+  font-size: var(--big-font-size);
+  color: var(--text-color);
+  line-height: 200%;
+}
+
+.apresentacao span {
+  color: var(--aux-color);
+}
+
+.botao {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--h2-font-size);
+  text-align: center;
+  max-width: 120px;
+  padding: 0.75rem 2.5rem;
+  border: 2px solid var(--aux-color);
+  border-radius: 0.8rem;
+  margin-top: 2rem;
+}
+
+.botao:hover {
+  background-color: var(--aux-color);
+}
+
+.container-foto {
+  color: white;
+}
+
+.foto {
+  height: 500px;
+  width: 310px;
+  background-image: url("img/foto.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -25px;
+}
+
+.redes-sociais a {
+  color: var(--text-color);
+  font-size: var(--h2-font-size);
+}
