@@ -41,6 +41,8 @@ li {
 
 a {
   text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 img {
@@ -49,7 +51,8 @@ img {
 }
 
 .container-header {
-  max-width: 1024px;
+  width: 1024px;
+  height: 27px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -58,10 +61,6 @@ img {
 
 .logo {
   font-size: var(--normal-font-size);
-}
-
-.logo:hover {
-  border-bottom: 0.2rem solid var(--aux-color);
 }
 
 .logo a {
@@ -87,7 +86,7 @@ img {
 
 .container-main {
   max-width: 1024px;
-  height: 40vh;
+  height: 30vh;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -138,7 +137,34 @@ img {
   top: -25px;
 }
 
+.redes-sociais-container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: space-between;
+  max-width: 180px;
+}
+
 .redes-sociais a {
+  margin-top: 1rem;
+  padding: 1rem;
   color: var(--text-color);
   font-size: var(--h2-font-size);
+}
+
+.container-arrow-div {
+  max-width: 1024px;
+  height: 35vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container-arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
