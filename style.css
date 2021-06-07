@@ -9,7 +9,7 @@
 :root {
   --body-font: "Poppins", sans-serif;
   --big-font-size: 3.6rem;
-  --h2-font-size: 2rem;
+  --h2-font-size: 2.6rem;
   --normal-font-size: 1.8rem;
 }
 
@@ -83,6 +83,10 @@ img {
   margin-top: 40px;
 }*/
 
+.container-home {
+  height: 100vh;
+}
+
 .logo {
   font-size: var(--normal-font-size);
 }
@@ -139,7 +143,7 @@ img {
 .botao {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-size: var(--h2-font-size);
+  font-size: 2rem;
   text-align: center;
   max-width: 120px;
   padding: 0.75rem 2.5rem;
@@ -183,6 +187,11 @@ img {
   font-size: var(--h2-font-size);
 }
 
+.redes-sociais a:hover {
+  background-color: #00adb5;
+  border-radius: 0.8rem;
+}
+
 .container-arrow-div {
   max-width: 1024px;
   height: 35vh;
@@ -194,5 +203,73 @@ img {
 .container-arrow {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-around;
+}
+
+/* ABOUT*/
+
+.about {
+  margin-top: 10rem;
+  max-width: 1024px;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+.tittle-about {
+  display: flex;
+  justify-content: center;
+  font-size: var(--h2-font-size);
+  color: var(--aux-color);
+}
+
+.container-about-text {
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-size: var(--normal-font-size);
+  width: 512px;
+}
+
+.about-text {
+  color: var(--text-color);
+}
+
+/*HABILIDADES*/
+
+.habilidades {
+  max-width: 1024px;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+.tittle-habilidades {
+  display: flex;
+  justify-content: center;
+  font-size: var(--h2-font-size);
+  color: var(--aux-color);
+  margin-bottom: 2rem;
+}
+
+.tittle-habilidades::after {
+  content: "Habilidades";
+
+  border-bottom: 2px solid #eeeeee;
+}
+
+.container-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards {
+  color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--h2-font-size);
+  height: 250px;
+  width: 250px;
+  border: 2px solid #00adb5;
+  margin: 2rem;
+  border-radius: 0.8rem;
 }
